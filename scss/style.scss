@@ -1,0 +1,136 @@
+    
+    $colorPrincipal:indianred;
+    $colorSecundario:rgb(224, 206, 206);
+    $fuenteLogo:'Courier New', Courier, monospace;  
+
+    @import '_cajaNav.scss';
+
+    header{
+
+        background-color:$colorPrincipal;
+
+    }
+
+    h1{
+        font-family: $fuenteLogo;         
+       
+        
+       
+    }
+    ._titulo{
+        color: rgb(224, 206, 206);
+        background-color: $colorPrincipal;
+        text-align: center;
+    }
+    .tabla
+    {   
+        margin-top: 15px;
+        margin-bottom: 15px;                
+        background-color: $colorPrincipal;
+        text-align: center;
+        table{
+
+            background-color: $colorSecundario;
+        }
+        .tablaMenu{
+
+            background-color: $colorSecundario;
+        }
+    }
+
+    .seccionPrincipal{ 
+        
+        display: grid;
+        grid-template-areas:
+        'asideDer articulo asideIzq'
+        'asideDer articulo asideIzq'
+        'asideDer articulo asideIzq';
+        
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-items: center;
+
+        .aside.Izq {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            form{
+                background-image: linear-gradient( indianred,rgb(228, 141, 141));
+                
+                color: rgb(197, 193, 193);   
+                padding-bottom: 1.2rem;
+             
+            }
+        }
+        .aside.Der{
+            margin-top: 15px;
+            margin-bottom: 15px;
+   
+            width: 200px;
+            height: 453px;
+            ul {
+
+                background-image: linear-gradient( indianred,rgb(228, 141, 141));
+                
+                list-style-type: none;
+                padding-left: 15px;
+                padding-bottom:17.2rem;
+                a{
+
+                    text-decoration:none;
+                    color:rgb(197, 193, 193);
+                    font-size:25px;
+                    transform: ro; 
+                
+                }
+            }
+            
+        }
+               
+    }
+
+
+    
+    footer{
+
+        /* display: grid;
+        grid-template-areas: 
+        'red1 cajaFooter telefono'
+        'red2 cajaFooter formtrabajo'
+        'red3 cajaFooter legales'; */
+        background-color: lightcoral;
+    }
+    .red1{
+        background-color: lightcoral;
+    }
+    .red2{
+        background-color: lightcoral;
+    }
+    .red3{
+        background-color: lightcoral;
+    }
+
+    @media only screen and (min-width: 768px) {
+        body{
+            background-color: white;
+        }
+    }
+
+    /* TABLET */
+
+    @media only screen and (seemax-width: 767px) and (min-width: 321px){
+        body{
+            background-color:darkgrey;
+        }
+    }
+
+    /* MOBILE */
+
+    @media only screen and (max-width: 320px) {
+        body{
+            background-color:skyblue;
+            /* grid-template-columns: repeat(2, 1fr); */
+        }
+        
+    }
+
+
