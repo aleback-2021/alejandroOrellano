@@ -1,8 +1,6 @@
     
-    $colorPrincipal:indianred;
-    $colorSecundario:rgb(224, 206, 206);
-    $fuenteLogo:'Courier New', Courier, monospace;  
-
+  
+    @import 'variables.scss';
     @import '_cajaNav.scss';
 
     header{
@@ -10,10 +8,13 @@
         background-color:$colorPrincipal;
 
     }
+    .seccionTragos{
 
+        font-family: $fuenteLogo;
+    }
     h1{
         font-family: $fuenteLogo;         
-       
+           
         
        
     }
@@ -22,6 +23,12 @@
         background-color: $colorPrincipal;
         text-align: center;
     }
+
+    .breadcrumb{
+
+        background-color: whitesmoke;
+    }
+
     .tabla
     {   
         margin-top: 15px;
@@ -87,8 +94,20 @@
         }
                
     }
+    .articulo{
 
+        margin-top: 15px;
+    }
 
+    .volver{
+
+        font-family: $fuenteLogo;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+    }
     
     footer{
 
