@@ -34,6 +34,9 @@
 header {
   background-color: indianred; }
 
+body {
+  overflow-x: hidden; }
+
 .seccionTragos {
   font-family: "Courier New", Courier, monospace; }
 
@@ -46,7 +49,7 @@ h1 {
   text-align: center; }
 
 .breadcrumb {
-  background-color: whitesmoke; }
+  background-color: #e0cece; }
 
 .tabla {
   margin-top: 15px;
@@ -54,6 +57,7 @@ h1 {
   background-color: indianred;
   text-align: center; }
   .tabla table {
+    margin: auto;
     background-color: #e0cece; }
   .tabla .tablaMenu {
     background-color: #e0cece; }
@@ -89,19 +93,70 @@ h1 {
 .articulo {
   margin-top: 15px; }
 
+.videos {
+  align-items: center; }
+
 .volver {
-  font-family: "Courier New", Courier, monospace; }
+  background-color: #e0cece;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 50px; }
   .volver a {
     text-decoration: none;
-    color: black; }
+    color: black;
+    font-size: 30px; }
 
 footer {
-  /* display: grid;
-        grid-template-areas: 
-        'red1 cajaFooter telefono'
-        'red2 cajaFooter formtrabajo'
-        'red3 cajaFooter legales'; */
-  background-color: lightcoral; }
+  background-color: #dba968; }
+  footer .card {
+    border: none;
+    background-color: #dba968; }
+  footer .red img {
+    width: 20px; }
+
+.imagenTragos {
+  float: left;
+  margin-right: 20px;
+  width: 350px;
+  align-items: center; }
+
+.imagenPostres {
+  float: left;
+  margin-right: 20px;
+  width: 350px;
+  align-items: center; }
+
+.trago {
+  background-color: #e0cece; }
+  .trago p {
+    width: 600px;
+    height: 453px;
+    margin-left: 205px;
+    top: 0;
+    text-align: justify; }
+
+.tituloSec {
+  text-align: center;
+  background-color: indianred; }
+
+.postre {
+  background-color: #e0cece;
+  margin-bottom: 20px; }
+  .postre p {
+    width: 600px;
+    height: 453px;
+    margin-left: 205px;
+    top: 0;
+    text-align: justify; }
+
+.plato {
+  background-color: #e0cece;
+  margin-bottom: 20px; }
+  .plato p {
+    width: 600px;
+    height: 453px;
+    margin-left: 205px;
+    top: 0;
+    text-align: justify; }
 
 .red1 {
   background-color: lightcoral; }
@@ -114,15 +169,20 @@ footer {
 
 @media only screen and (min-width: 768px) {
   body {
-    background-color: white; } }
+    background-color: white;
+    height: auto;
+    width: auto; } }
 
 /* TABLET */
 @media only screen and (seemax-width: 767px) and (min-width: 321px) {
   body {
-    background-color: darkgrey; } }
+    background-color: darkgrey;
+    height: auto;
+    width: auto; } }
 
 /* MOBILE */
 @media only screen and (max-width: 320px) {
   body {
     background-color: skyblue;
-    /* grid-template-columns: repeat(2, 1fr); */ } }
+    height: auto;
+    width: auto; } }

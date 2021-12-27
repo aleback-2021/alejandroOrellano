@@ -8,6 +8,9 @@
         background-color:$colorPrincipal;
 
     }
+    body{
+        overflow-x: hidden;
+    }
     .seccionTragos{
 
         font-family: $fuenteLogo;
@@ -26,17 +29,18 @@
 
     .breadcrumb{
 
-        background-color: whitesmoke;
+        background-color:$colorSecundario;
     }
 
     .tabla
     {   
+        
         margin-top: 15px;
         margin-bottom: 15px;                
         background-color: $colorPrincipal;
         text-align: center;
         table{
-
+            margin:auto;
             background-color: $colorSecundario;
         }
         .tablaMenu{
@@ -98,26 +102,89 @@
 
         margin-top: 15px;
     }
+    .videos{
 
+        align-items: center;
+    }
     .volver{
-
+        background-color: $colorSecundario;
         font-family: $fuenteLogo;
+        margin-bottom: 50px;
         a{
             text-decoration: none;
             color: black;
+            font-size: 30px;
+            
         }
 
     }
     
     footer{
+       
+        background-color:rgb(219, 169, 104);
 
-        /* display: grid;
-        grid-template-areas: 
-        'red1 cajaFooter telefono'
-        'red2 cajaFooter formtrabajo'
-        'red3 cajaFooter legales'; */
-        background-color: lightcoral;
+        .card{
+            border: none;
+            background-color: rgb(219, 169, 104);
+        }
+        .red img{
+            width: 20px;
+
+        }
     }
+    
+
+    .imagenTragos{
+        float: left;
+        margin-right: 20px;
+        width: 350px;
+        align-items: center;
+    }
+    .imagenPostres{
+        float: left;
+        margin-right: 20px;
+        width: 350px;
+        align-items: center;
+    }
+    .trago{ 
+    background-color: $colorSecundario;
+    
+        p{
+            width: 600px;
+            height: 453px;
+            margin-left: 205px;
+            top: 0;
+            text-align: justify;
+        }
+
+    }
+    .tituloSec{
+        text-align: center;
+        background-color: $colorPrincipal;   
+    }
+    
+    .postre{ 
+        background-color: $colorSecundario;
+        margin-bottom: 20px;
+        
+        p{
+            width: 600px;
+            height: 453px;
+            margin-left: 205px;
+            top: 0;
+            text-align: justify;}
+        }
+
+        .plato{ 
+            background-color: $colorSecundario;
+            margin-bottom: 20px;
+            p{
+                width: 600px;
+                height: 453px;
+                margin-left: 205px;
+                top: 0;
+                text-align: justify;}
+            }    
     .red1{
         background-color: lightcoral;
     }
@@ -131,6 +198,9 @@
     @media only screen and (min-width: 768px) {
         body{
             background-color: white;
+            height: auto;
+            width: auto;      
+
         }
     }
 
@@ -139,6 +209,9 @@
     @media only screen and (seemax-width: 767px) and (min-width: 321px){
         body{
             background-color:darkgrey;
+            height: auto;
+            width: auto;      
+
         }
     }
 
@@ -147,7 +220,9 @@
     @media only screen and (max-width: 320px) {
         body{
             background-color:skyblue;
-            /* grid-template-columns: repeat(2, 1fr); */
+            height: auto;
+            width: auto;      
+
         }
         
     }
